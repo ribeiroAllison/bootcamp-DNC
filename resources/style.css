@@ -66,6 +66,33 @@ body{
         border:0;
         cursor: pointer;
     }
+    @media only screen and (max-width: 600px){
+        #principal{
+            flex-direction: column;
+            height: auto;
+            
+
+        }
+
+        #menu{
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            
+        }
+
+        #menu a{
+            display: flex;
+            height: 50px;
+            align-items: center;
+        }
+
+        #principal button{
+            margin:0;
+            width: 100%;
+            
+        }
+    }
 
 /* MAIN BODY */
 
@@ -102,6 +129,18 @@ header{
         font-weight: 800;
         padding: 5px;
 
+    }
+
+    @media only screen and (max-width: 600px){
+        header h1{
+            font-size: 38px;
+        }
+
+        header h2{
+            font-size: 28px;
+            padding: 0 5px;
+            line-height: 1.5;
+        }
     }
 
 /* FORM SECTION */
@@ -165,10 +204,31 @@ button:hover{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 600px){
+    form{
+        width: 95%;
+        
+    }
+
+    form label{
+        font-size: 20px;
+    }
+
+    #checkbox-items label{
+        font-size: 17px;
+    }
+
+}
+
+
 /* FOOTER SECTION */
 
 footer{
     background-color: var(--azul-dnc);
+}
+
+footer nav ul{
+    padding-left: 0;
 }
 
 #details{
@@ -184,6 +244,9 @@ footer{
     margin-bottom: 50px;
     
 }
+    #links li{
+        list-style: none;
+    }
 
     #links a{
         text-decoration: none;
@@ -209,9 +272,12 @@ footer{
         width: 150px;
         margin: auto;
         margin-top: 70px;
+        font-weight: 800;
            
         
     }
+
+    
 
     
 #info{
@@ -225,7 +291,7 @@ footer{
     
 }
 
-#terms{}
+
 
 #terms h3{
     height: 100%;
@@ -243,3 +309,4 @@ footer{
 #terms a:hover{
     color: var(--cinza-hover);
 }
+
